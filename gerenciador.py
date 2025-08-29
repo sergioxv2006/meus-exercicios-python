@@ -31,7 +31,7 @@ def sair():
       continuar = True
       while continuar:
             
-            print(opcao)
+            print("Menu: (1) add_tarefas, (2) listar_tarefas, (3)marcar_concluida, (4) sair")
             escolha = input("Qual a sua escolha: ")
 
             funcao = opcao.get(escolha)
@@ -39,3 +39,5 @@ def sair():
             if funcao:
                if funcao(tarefas) == False:
                   continuar = False
+               else:
+                  print("Opção inválida")
